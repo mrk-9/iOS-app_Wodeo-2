@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jvD-mn-5lw">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="jaa-Wi-qqK">
+            <objects>
+                <viewController id="jvD-mn-5lw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2c1-o5-PdM"/>
+                        <viewControllerLayoutGuide type="bottom" id="RTg-Xv-f2k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lPV-j2-DpH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="zYE-TW-u99">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1L1-nK-c7W">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ORV-Ac-gTr"/>
+                                    <constraint firstAttribute="height" constant="200" id="gXc-FU-uRU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1L1-nK-c7W" firstAttribute="centerY" secondItem="lPV-j2-DpH" secondAttribute="centerY" id="Eg7-4k-z48"/>
+                            <constraint firstItem="zYE-TW-u99" firstAttribute="top" secondItem="lPV-j2-DpH" secondAttribute="topMargin" id="VAT-md-aMb"/>
+                            <constraint firstItem="zYE-TW-u99" firstAttribute="leading" secondItem="lPV-j2-DpH" secondAttribute="leadingMargin" constant="-20" id="bm6-cl-3bS"/>
+                            <constraint firstItem="1L1-nK-c7W" firstAttribute="centerX" secondItem="lPV-j2-DpH" secondAttribute="centerX" id="dmU-oC-l1S"/>
+                            <constraint firstItem="RTg-Xv-f2k" firstAttribute="top" secondItem="zYE-TW-u99" secondAttribute="bottom" id="nZ3-Sv-ddf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zYE-TW-u99" secondAttribute="trailing" constant="-20" id="yoO-3J-6fA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6h2-yx-W1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="536" y="93"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BG" width="414" height="736"/>
+        <image name="BGLogo" width="200" height="200"/>
+    </resources>
+</document>
